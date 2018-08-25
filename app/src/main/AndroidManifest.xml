@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="terrain.foot.com.foot">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme2">
+        <activity
+            android:name=".Profile"
+
+            android:theme="@style/AppTheme1">
+            
+        </activity>
+        <activity
+            android:name=".Image"
+
+            android:theme="@style/AppTheme1">
+
+        </activity>
+        <activity
+            android:name=".Calendrierr"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme2">
+
+        </activity>
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:theme="@style/AppTheme2">
+
+        </activity>
+        <activity
+            android:name=".Evenement"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme2">
+
+        </activity>
+        <activity
+            android:name=".Parametre"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme2">
+
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme2">
+
+        </activity>
+        <activity
+            android:name=".Tournoi"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme2">
+
+        </activity>
+
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme2">
+
+        </activity>
+        <activity
+            android:name=".Welcom"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+       <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff" >
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/namestade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="79dp"
+            android:text="Paramètres"
+            android:textColor="#ffffff"
+
+            android:textSize="20dp"
+            android:layout_marginLeft="72dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/refresh1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="17dp"
+            android:src="@drawable/refresh" />
+
+        <ImageButton
+            android:id="@+id/back1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/arrowl"
+            android:background="@null"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            />
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:textSize="16dp"
+
+        android:textColorHint="#000" >
+
+        <android.support.design.widget.TextInputEditText
+android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom du terrain"
+            android:inputType="textEmailAddress"
+            android:textColor="#000"
+            android:textSize="16dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:errorEnabled="true"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:textColorHint="#000">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/localisation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Localisation"
+            android:inputType="text"
+            android:textColor="#000"
+            android:textSize="16dp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/text_input_oldpassword"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:errorEnabled="true"
+               app:passwordToggleEnabled="true"
+               android:paddingRight="16dp"
+               android:paddingLeft="16dp"
+               android:textColorHint="#000">
+
+               <android.support.design.widget.TextInputEditText
+                   android:id="@+id/oldmdp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="ancien mot de passe"
+                   android:inputType="textPassword"
+                   android:textColor="#000"
+                   android:textSize="16dp"
+                   />
+
+           </android.support.design.widget.TextInputLayout>
+
+           <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:textColorHint="#000">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/mdp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textSize="16dp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_password1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:textColorHint="#000">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/mdp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Retapez le mot de passe"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textSize="16dp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:errorEnabled="true"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:textColorHint="#000">
+
+        <android.support.design.widget.TextInputEditText
+            android:phoneNumber="true"
+            android:id="@+id/numéro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telephone"
+            android:inputType="phone"
+            android:textColor="#000"
+            android:textSize="16dp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ballons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:errorEnabled="true"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:textColorHint="#000">
+
+        <android.support.design.widget.TextInputEditText
+            android:phoneNumber="true"
+            android:id="@+id/ballon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ballons"
+            android:inputType="phone"
+            android:textColor="#000"
+            android:textSize="16dp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/bouteilleeau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:errorEnabled="true"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:textColorHint="#000">
+
+        <android.support.design.widget.TextInputEditText
+            android:phoneNumber="true"
+            android:id="@+id/eau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nombre de bouteille d'eau par match"
+            android:inputType="phone"
+            android:textColor="#000"
+            android:textSize="16dp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/confirmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="confirmInput"
+        android:text="Confirmer"
+        android:background="@drawable/shape"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="#fff"/>
+
+</LinearLayout>
+</ScrollView>

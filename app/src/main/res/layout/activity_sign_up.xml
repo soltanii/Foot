@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#4caf50"
+            android:elevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrowl" />
+
+
+                <TextView
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="72dp"
+                    android:text="Sign up"
+                    android:textColor="#ffffff"
+                    android:textSize="24dp"
+                    android:layout_marginLeft="72dp"
+                    android:layout_alignParentLeft="true" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_marginTop="10sp"
+            android:id="@+id/textNom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Nom :"
+            android:textSize="15dp" />
+        <EditText
+            android:layout_marginTop="10sp"
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10sp"
+            android:id="@+id/textPrenom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Prenom :"
+            android:textSize="15dp" />
+
+        <EditText
+            android:layout_marginTop="10sp"
+            android:id="@+id/prenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10sp"
+            android:id="@+id/textemail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail :"
+            android:textSize="15dp"/>
+        <EditText
+            android:layout_marginTop="10sp"
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+        <TextView
+            android:layout_marginTop="10sp"
+            android:id="@+id/textmp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Mot de pass :"
+            android:textSize="15dp"/>
+        <EditText
+            android:layout_marginTop="10sp"
+            android:id="@+id/passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+        <TextView
+            android:layout_marginTop="10sp"
+            android:id="@+id/textmp1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmez mot de pass :"
+            android:textSize="15dp"/>
+        <EditText
+            android:layout_marginTop="10sp"
+            android:id="@+id/passwd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+        <TextView
+            android:layout_marginTop="10sp"
+            android:id="@+id/Mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile:"
+            android:textSize="15dp"/>
+        <EditText
+            android:layout_marginTop="10sp"
+            android:id="@+id/Mobile1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"/>
+
+        <TextView
+            android:layout_marginTop="10sp"
+            android:id="@+id/gouvernorat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="gouvernorat:"
+            android:textSize="15dp"/>
+        <EditText
+            android:layout_marginTop="10sp"
+            android:id="@+id/gouvernorat1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoCorrect"/>
+
+        <LinearLayout
+            android:layout_width="408dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ajouter une Image"
+                android:textSize="15dp" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="65dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="0dp"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:maxHeight="80dp"
+                android:maxWidth="80dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/libraryplus" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/valider"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:onClick="goToAnActivity"
+android:background="@drawable/sign_in_button_backgroundx"
+            android:text="Valider" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
